@@ -6,9 +6,9 @@ public class UsnIncomeMinusOutcome extends TaxSystem {
     public int calcTax(int debit, int credit) {
         int profit = debit - credit;
 
-        if (profit <=0) {
+        if (profit <= 0) {
             return 0;
         }
-        return profit * 15/100;
+        return profit * 15 / 100;
     }
 }
